@@ -379,7 +379,7 @@ label {
 /*= SECTIONS
 ---------------------------------------------------------------------------------------------- */
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .section.type-1 {
   background: #2a333b;
@@ -790,6 +790,9 @@ label {
 .footer .link-social:hover {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+.section-contact{
+  height: 700px;
 }
 .section-contact .address-row {
   display: table;

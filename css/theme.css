@@ -217,7 +217,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  
+
 }
 body {
   background: #fff;
@@ -693,7 +693,7 @@ label {
 	color:#2c2b2b;
 }
 
- 	
+
 /*= PRICING PLANS
 ---------------------------------------------------------------------------------------------- */
 .pricing-plans .plan-name { text-align:center;}
@@ -794,6 +794,7 @@ label {
 .section-contact .address-row {
   display: table;
   width: 100%;
+  text-align: center;
 }
 .section-contact .address-sign {
   display: table-cell;
@@ -803,6 +804,7 @@ label {
 }
 .section-contact .address-info {
   display: table-cell;
+
 }
 
 /*= EMAIL SUBSCRIPTION---------------------------------------------------------------------------------------------- */

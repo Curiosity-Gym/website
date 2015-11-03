@@ -443,7 +443,7 @@ label {
   margin-bottom: 30px;
 }
 .section-headlines {
-  margin-bottom: 60px;
+  margin-bottom: 1px;
   text-align: center;
 }
 .section-headlines > h2 {
@@ -793,8 +793,9 @@ label {
 }
 .section-contact .address-row {
   display: table;
-  width: 100%;
-  text-align: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-contact .address-sign {
   display: table-cell;
@@ -804,6 +805,7 @@ label {
 }
 .section-contact .address-info {
   display: table-cell;
+  width: 100px;
 
 }
 

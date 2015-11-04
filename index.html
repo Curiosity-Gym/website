@@ -34,24 +34,26 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-  </script>
-<header class="header" id="jump">
+	<!-- Facebook SDK Start -->
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '172560153089368',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	 </script>
+	<!-- Facebook SDK Stop -->
+  <header class="header" id="jump">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -117,130 +119,13 @@
 </section>
 
 <div id="jump1" class="jumper"></div>
-<!-- About us -->
-<div class="section type-2">
-  <div class="container">
-    <div class="section-headlines">
-      <h4>About us</h4>
-      <div> Our goal is to be able to spark and satiate your curiosity and design/make products </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 features text-center"> <img src="images/pic3-450x410.png" alt="" /> </div>
-      <div class="col-lg-6 features">
-        <div class="media"> <i class=" icon-wrench pull-left animated bounce"></i>
-          <div class="media-body">
-            <h3>Design Thinking</h3>
-            <div>Enabling innovation through working on principle of design thinking.
-			We believe anyone can innovate, because innovation simply begins with curiosity.</div>
-          </div>
-        </div>
-        <br class="gap-30" />
-        <div class="media"> <i class=" icon-bar-chart pull-left animated bounce"></i>
-          <div class="media-body">
-            <h3>Internet of Things</h3>
-            <div>We want to introduce you to the building blocks of Iot. The technology used in rapid prototyping.</div>
-          </div>
-        </div>
-        <br class="gap-30" />
-        <div class="media"> <i class=" icon-mobile-phone pull-left animated bounce"></i>
-          <div class="media-body">
-            <h3>Inventing the Thing I want</h3>
-            <div>If you have been tinkering and want to hack your way to solve a problem. </div>
-          </div>
-        </div>
-        <br class="gap-30" />
-        <div class="media"> <i class=" icon-mobile-phone pull-left animated bounce"></i>
-          <div class="media-body">
-            <h3>Entrepreneur mentoring</h3>
-            <div>Be mentored by industry vetrans who have spent ages developing products and scaling companies.</div>
-          </div>
-        </div>
-        <div class="visible-xs visible-sm"> <br class="gap-30" />
-          <hr class="gap-divider" />
-          <br class="gap-30" />
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-lg-4 features">
-        <h3>Our Skills</h3>
-        <div class="skills">
-          <p>Electronics, arduino and embeded Design</p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> </div>
-          </div>
-          <hr>
-          <p>Product design and manufacturing mentoring</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> </div>
-          </div>
-          <hr>
-          <p>Software Development and scaling </p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> </div>
-          </div>
-          <hr>
-          <p>Rapid prototyoping </p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 features">
-        <div class="panel-group" id="accordion">
-          <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> 3D printing<i class="icon-plus"></i> <i class="icon-minus"></i> </a> </h3>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-              <div class="panel-body"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/>
-                <br/>
-                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Hack every day objects<i class="icon-plus"></i> <i class="icon-minus"></i> </a> </h3>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/>
-                <br/>
-                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Invent the Think I want<i class="icon-plus"></i> <i class="icon-minus"></i> </a> </h3>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
-            </div>
-          </div>
-        </div>
-        <div class="visible-xs visible-sm"> <br class="gap-30" />
-          <hr class="gap-divider" />
-          <br class="gap-30" />
-        </div>
-      </div>
-      <div class="col-lg-4 features">
-        <h3>Get To Know Us</h3>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
-        <p> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div id="jump2" class="jumper"></div>
 <!-- Featured Work -->
 <div class="section type-1" style="padding-bottom: 0">
   <div class="container">
     <div class="section-headlines">
-      <h4>Our Past Events</h4>
-      <h2>Sneak-peek of the events at the Gym</h2>
+      <h4>What can you do with us?</h4>
+      <!-- <h2>Sneak-peek of the events at the Gym</h2> -->
     </div>
     <div class="gallery-control">
       <div data-toggle="buttons">
@@ -387,33 +272,124 @@
 
 </div>
 
-<!-- Stats  -->
-<div class="section type-3 stats">
-<div class="section-headlines">
-      <h4>Fun Stats</h4>
+<!-- About us -->
+<div class="section type-2">
+  <div class="container">
+    <div class="section-headlines">
+      <h4>About us</h4>
+      <div> Our goal is to be able to spark and satiate your curiosity and design/make products </div>
     </div>
-    <div class="container">  <div class="row ">
-
-      <div class="col-sm-4 col-xs-12">
-        <h3><i class="icon-anchor"></i> Boast About</h3>
-        <p> Lorem ipsum dolor sit amet enim. Etiam
-          ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis. </p>
+    <div class="row">
+      <div class="col-lg-6 features text-center"> <img src="images/pic3-450x410.png" alt="" /> </div>
+      <div class="col-lg-6 features">
+        <div class="media"> <i class=" icon-wrench pull-left animated bounce"></i>
+          <div class="media-body">
+            <h3>Design Thinking</h3>
+            <div>Enabling innovation through working on principle of design thinking.
+			We believe anyone can innovate, because innovation simply begins with curiosity.</div>
+          </div>
+        </div>
+        <br class="gap-30" />
+        <div class="media"> <i class=" icon-bar-chart pull-left animated bounce"></i>
+          <div class="media-body">
+            <h3>Internet of Things</h3>
+            <div>We want to introduce you to the building blocks of Iot. The technology used in rapid prototyping.</div>
+          </div>
+        </div>
+        <br class="gap-30" />
+        <div class="media"> <i class=" icon-mobile-phone pull-left animated bounce"></i>
+          <div class="media-body">
+            <h3>Inventing the Thing I want</h3>
+            <div>If you have been tinkering and want to hack your way to solve a problem. </div>
+          </div>
+        </div>
+        <br class="gap-30" />
+        <div class="media"> <i class=" icon-mobile-phone pull-left animated bounce"></i>
+          <div class="media-body">
+            <h3>Entrepreneur mentoring</h3>
+            <div>Be mentored by industry vetrans who have spent ages developing products and scaling companies.</div>
+          </div>
+        </div>
+        <div class="visible-xs visible-sm"> <br class="gap-30" />
+          <hr class="gap-divider" />
+          <br class="gap-30" />
+        </div>
       </div>
-      <div class="col-sm-4 col-xs-12">
-        <h3><i class="icon-coffee"></i> Current Build projects</h3>
-        <p> Lorem ipsum dolor sit amet enim. Etiam
-          ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis. </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-4 features">
+        <h3>Our Skills</h3>
+        <div class="skills">
+          <p>Electronics, arduino and embeded Design</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> </div>
+          </div>
+          <hr>
+          <p>Product design and manufacturing mentoring</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> </div>
+          </div>
+          <hr>
+          <p>Software Development and scaling </p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> </div>
+          </div>
+          <hr>
+          <p>Rapid prototyoping </p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4 col-xs-12">
-        <h3><i class=" icon-beaker"></i> Creative Ideas</h3>
-        <p> Lorem ipsum dolor sit amet enim. Etiam
-          ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis. </p>
+      <div class="col-lg-4 features">
+        <div class="panel-group" id="accordion">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> 3D printing<i class="icon-plus"></i> <i class="icon-minus"></i> </a> </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/>
+                <br/>
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Hack every day objects<i class="icon-plus"></i> <i class="icon-minus"></i> </a> </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/>
+                <br/>
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Invent the Think I want<i class="icon-plus"></i> <i class="icon-minus"></i> </a> </h3>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </div>
+            </div>
+          </div>
+        </div>
+        <div class="visible-xs visible-sm"> <br class="gap-30" />
+          <hr class="gap-divider" />
+          <br class="gap-30" />
+        </div>
+      </div>
+      <div class="col-lg-4 features">
+        <h3>Get To Know Us</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+        <p> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
       </div>
     </div>
   </div>
 </div>
 
-<div id="jump3" class="jumper"></div>
+<div id="jump2" class="jumper"></div>
 
 <!-- Testimonials -->
 <div class="section type-3">
@@ -422,9 +398,10 @@
       <h4>We are Social</h4>
       <h2>Find out about us on social media</h2>
       <div>Don't forget to appreciate us on social media</div>
+			<br>
     </div>
 		<!-- Start of Twitter PLugin -->
-		<div>
+		<div style="width:540px; display:inline-block">
     <a class="twitter-timeline" href="https://twitter.com/CuriosityGym" data-widget-id="659726488116162561">Tweets by @CuriosityGym</a>
     <script>!function (d, s, id)
 		{
@@ -439,15 +416,23 @@
     </script>
 	</div>
 		<!-- 	End of Twitter plugin -->
-    <!-- Facebook PLugin
-		<div class="fb-page" data-href="https://www.facebook.com/curiositygym" data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/curiositygym"></div></div>
-		-->
 			<!-- Start of meetup plugin -->
-			<div>
-			<iframe width="520" height="600" src="http://meetu.ps/2QrzsN" frameborder="0"></iframe>
+			<div style="width:520px; display: inline-block; height:210px; vertical-align:top">
+			<iframe width="520" height="200" src="http://meetu.ps/2QrzsN" frameborder="0"></iframe>
 		</div>
-<!-- End of meetup plugin -->
-  </div>
+		<!-- End of meetup plugin -->
+		<!-- Start of facebbok plugin -->
+		<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+		<div style="width:520px; display:inline-block; horizontal-align:right; vertical-align:top">
+			<div class="fb-page" data-href="https://www.facebook.com/curiositygym" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/curiositygym"><a href="https://www.facebook.com/curiositygym">CuriosityGym</a></blockquote></div></div>
+		</div>
+		<!-- End of facebook plugin -->
+  	</div>
 </div>
 
 <!-- Subscription -->
@@ -500,7 +485,7 @@
       <div class="col-lg-4">
         <div class="plan radius3">
           <div class="plan-name">
-						<a href="www.instamojo.com" style="text-decoration:none">
+						<a href="http://imojo.in/1lyyf6" style="text-decoration:none">
 						<h2>Quaterly
               <div class="plan-price"> <b>Rs 1200</b>  </div>
             </h2>
@@ -515,7 +500,7 @@
       <div class="col-lg-4">
         <div class="plan plan-featured radius3">
           <div class="plan-name">
-						<a href="www.instamojo.com" style="text-decoration:none">
+						<a href="http://imojo.in/1mdyjq" style="text-decoration:none">
             <h2>Semiannually
               <div class="plan-price"> <b>Rs 1800</b>  </div>
             </h2>
@@ -530,7 +515,7 @@
       <div class="col-lg-4">
         <div class="plan radius3">
           <div class="plan-name">
-						<a href="www.instamojo.com" style="text-decoration:none">
+						<a href="http://imojo.in/zaca1" style="text-decoration:none">
 						<h2>Annualy
               <div class="plan-price"> <b>Rs 3000</b></div>
             </h2>
@@ -581,7 +566,7 @@
     </div>
     </div>
 		<div class="google-maps">
-		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="600" height="600" src="https://maps.google.com/maps?hl=en&q=Curiosity Gym, Palkhiwala Building, Fort, Mumbai&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://premiumlinkgenerator.com/keep2share-cc">keep2share premium link generator</a></small></div></iframe>
+		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="600" height="600" src="https://maps.google.com/maps?hl=en&q=Curiosity Gym, Palkhiwala Building, Fort, Mumbai&ie=UTF8&t=roadmap&z=20&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://premiumlinkgenerator.com/keep2share-cc">keep2share premium link generator</a></small></div></iframe>
 	</div>
 </div>
 </div>

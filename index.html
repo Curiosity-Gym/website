@@ -35,23 +35,14 @@
 
 <body>
 	<!-- Facebook SDK Start -->
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '172560153089368',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-	 </script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=172560153089368";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- Facebook SDK Stop -->
   <header class="header" id="jump">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -97,7 +88,7 @@
             <h1>Curiosity Gym <br> <font size=7>is a place</font></h1>
             <p>open for people of all ages to learn, tinker, prototype and make.</p>
           </div>
-          <a href="#jump1" class="btn btn-outline btn-lg"> Our Sessions </a> &nbsp; <a href="#jump5" class="btn btn-outline btn-lg"> Contact Us </a> </div>
+          <a href="#jump1" class="btn btn-outline btn-lg"> Our Sessions </a> &nbsp; <a href="#jump2" class="btn btn-outline btn-lg"> Contact Us </a> </div>
       </div>
     </div>
   </div>
@@ -270,7 +261,7 @@
   <!--end:.mixitup-->
 
 </div>
-
+<div id="jump2" class="jumper"></div>
 <!-- About us -->
 <div class="section type-2">
   <div class="container">
@@ -305,7 +296,9 @@
 		</div>
 	</div>
 </div>
-<div id="jump2" class="jumper"></div>
+
+
+<div id="jump3" class="jumper"></div>
 
 <!-- Testimonials -->
 <div class="section type-3">
@@ -332,18 +325,20 @@ fjs.parentNode.insertBefore(js, fjs);
     </script>
 	</div>
 		<!-- 	End of Twitter plugin -->
+		<div style="width:530px; display: inline-block; height:600px; vertical-align:top">
 			<!-- Start of meetup plugin -->
-			<div style="width:530px; display: inline-block; height:210px; vertical-align:top; overflow-x:hidden; overflow-y:hidden">
-			<iframe width="520" height="200" src="http://meetu.ps/2QrzsN" frameborder="0"></iframe>
+			<div style="width:530px; height:200px; vertical-align:top; overflow-x:hidden; overflow-y:hidden">
+			<iframe width="530" height="200" src="http://meetu.ps/2QrzsN" frameborder="0"></iframe>
 		</div>
 		<!-- End of meetup plugin -->
 		<!-- Start of facebbok plugin -->
-		<div style="width:520px; display:inline-block; horizontal-align:right; vertical-align:top">
-			<div class="fb-page" data-href="https://www.facebook.com/curiositygym" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/curiositygym"><a href="https://www.facebook.com/curiositygym">CuriosityGym</a></blockquote></div></div>
-		</div>
+		<div style="padding-left:10px" class="fb-page" data-href="https://www.facebook.com/curiositygym" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/curiositygym"><a href="https://www.facebook.com/curiositygym">CuriosityGym</a></blockquote></div></div>
 		<!-- End of facebook plugin -->
   	</div>
+	</div>
 </div>
+
+<div id="jump4" class="jumper"></div>
 
 <!-- Subscription -->
 <section class="section type-4 email-susbscription">
@@ -380,7 +375,8 @@ fjs.parentNode.insertBefore(js, fjs);
   </div>
 </section>
 
-<div id="jump6" class="jumper"></div>
+<div id="jump5" class="jumper"></div>
+
 
 <!-- Membership -->
 <div class="section type-2">
@@ -396,9 +392,7 @@ fjs.parentNode.insertBefore(js, fjs);
         <div class="plan radius3">
           <div class="plan-name">
 						<a href="http://imojo.in/1lyyf6" style="text-decoration:none">
-						<h2>Quaterly
-              <div class="plan-price"> <b>Rs 1200</b>  </div>
-            </h2>
+						<h2 style="font-size: xx-large">Quaterly</h2>
 					</a>
           </div>
         </div>
@@ -411,9 +405,7 @@ fjs.parentNode.insertBefore(js, fjs);
         <div class="plan plan-featured radius3">
           <div class="plan-name">
 						<a href="http://imojo.in/1mdyjq" style="text-decoration:none">
-            <h2>Semiannually
-              <div class="plan-price"> <b>Rs 1800</b>  </div>
-            </h2>
+            <h2 style="font-size: xx-large">Semiannually</h2>
 					</a>
           </div>
         </div>
@@ -426,9 +418,7 @@ fjs.parentNode.insertBefore(js, fjs);
         <div class="plan radius3">
           <div class="plan-name">
 						<a href="http://imojo.in/zaca1" style="text-decoration:none">
-						<h2>Annualy
-              <div class="plan-price"> <b>Rs 3000</b></div>
-            </h2>
+						<h2 style="font-size: xx-large">Annualy</h2>
 					</a>
           </div>
         </div>
@@ -443,11 +433,8 @@ fjs.parentNode.insertBefore(js, fjs);
   </div>
 </div>
 
-<!--<div id="jump4" class="jumper"></div>-->
-
-
 <!-- End of Membership -->
-<div id="jump5" class="jumper"></div>
+<div id="jump6" class="jumper"></div>
 <!-- Contact -->
  <div class="section type-1 section-contact" style="height:600px">
   <div style="height: 100%" class="container">

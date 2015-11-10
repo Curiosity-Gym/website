@@ -452,7 +452,6 @@ label {
 .section-headlines > h4 {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 3em;
-  text-transform: uppercase;
   color: #00a0dc;
   border-bottom: 2px solid #ddd;
   display: inline-block;

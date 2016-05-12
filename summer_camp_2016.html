@@ -2,7 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Curiosity Gym | Spring Camp 2016</title>
+  <title>Curiosity Gym | Summer Camp 2016</title>
+  <!--  Facebook open graph markups -->
+  <meta property="og:url"                content="http://curiositygym.com/summer_camp_2016.html" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="Curiosity Gym Summer Camp" />
+  <meta property="og:description"        content="Wondering how to spend time during the Summer holidays? Add that spark of learning with fun activities to change a boring summer holiday into an exciting one!" />
+  <meta property="og:image"              content="http://curiositygym.com/images/fbimage.png" />
+  <meta property="og:image:width"        content="800px" />
+  <meta property="og:image:height"       content="800px" />
+  <!-- End of open graph markups -->
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -33,19 +42,9 @@
       #report1 ul { margin:10px 0 10px 40px; padding:0px;}
       #report1 th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#fff; padding:7px 15px; text-align:left;}
       #report1 td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:7px 15px; }
-      #report1 tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; }
+      #report1 tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer;}
       #report1 div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
       #report1 div.up { background-position:0px 0px;}
-
-      #report2 { border-collapse:collapse;}
-      #report2 h4 { margin:0px; padding:0px;}
-      #report2 img { float:right;}
-      #report2 ul { margin:10px 0 10px 40px; padding:0px;}
-      #report2 th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#fff; padding:7px 15px; text-align:left;}
-      #report2 td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:7px 15px; }
-      #report2 tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; }
-      #report2 div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
-      #report2 div.up { background-position:0px 0px;}
 
   </style>
 
@@ -57,10 +56,10 @@
   <script type="text/javascript">
       $(document).ready(function(){
           $("#report tr:odd").addClass("odd");
-          $("#report tr:not(.odd)").hide();
+          $("#report tr:not(.odd)").show();
           $("#report tr:first-child").show();
 
-          $("#report tr.odd").click(function(){
+              $("#report tr.odd").click(function(){
               $(this).next("tr").toggle();
               $(this).find(".arrow").toggleClass("up");
           });
@@ -69,22 +68,10 @@
   <script type="text/javascript">
       $(document).ready(function(){
           $("#report1 tr:odd").addClass("odd");
-          $("#report1 tr:not(.odd)").hide();
+          $("#report1 tr:not(.odd)").show();
           $("#report1 tr:first-child").show();
 
           $("#report1 tr.odd").click(function(){
-              $(this).next("tr").toggle();
-              $(this).find(".arrow").toggleClass("up");
-          });
-      });
-  </script>
-  <script type="text/javascript">
-      $(document).ready(function(){
-          $("#report2 tr:odd").addClass("odd");
-          $("#report2 tr:not(.odd)").hide();
-          $("#report2 tr:first-child").show();
-
-          $("#report2 tr.odd").click(function(){
               $(this).next("tr").toggle();
               $(this).find(".arrow").toggleClass("up");
           });
@@ -313,8 +300,8 @@
                   <font size = 4><u>Session 3 : Coffee Essence Workshop</u><br></font>
                   <font size = 3>Coffee Essence Workshop is basically coffee painting.<br>
                   Fabulous compositions can be made with just coffee and water on paper.<br>
-                    <u>Take away :</u> Two complete paintings (A4 size)</font>
-                  The Workshop open for ages 8 & above.<br>
+                    <u>Take away :</u> Two complete paintings (A4 size)</font><br>
+                  The Workshop is open for ages 8 & above.<br>
                   To pay for the session, click <a href="http://imojo.in/d90ie1" target="_blank">here</a>.
                 </font></p>
             </td>

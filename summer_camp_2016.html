@@ -46,6 +46,16 @@
       #report1 div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
       #report1 div.up { background-position:0px 0px;}
 
+      #report2 { border-collapse:collapse;}
+      #report2 h4 { margin:0px; padding:0px;}
+      #report2 img { float:right;}
+      #report2 ul { margin:10px 0 10px 40px; padding:0px;}
+      #report2 th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#fff; padding:7px 15px; text-align:left;}
+      #report2 td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:7px 15px;}
+      #report2 tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; border-top:1px solid black;}
+      #report2 div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+      #report2 div.up { background-position:0px 0px;}
+
   </style>
 
   <!-- Scripts -->
@@ -77,6 +87,18 @@
           });
       });
   </script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $("#report2 tr:odd").addClass("odd");
+          $("#report2 tr:not(.odd)").show();
+          $("#report2 tr:first-child").show();
+
+          $("#report2 tr.odd").click(function(){
+              $(this).next("tr").toggle();
+              $(this).find(".arrow").toggleClass("up");
+          });
+      });
+  </script>
 </head>
 
 <body>
@@ -88,6 +110,7 @@
             <h1><font size = 10>Curiosity Gym Summer Camp</font></h1>
             </div>
       </div>
+      <!-- Commenting out the morning Camps
       <div>
         <p><font size = 8>Morning Camps</font></p>
         <div><font size = 4>
@@ -103,7 +126,7 @@
               <th></th>
             </tr>
           </font>
-            <!-- Row for morning camp session 1 -->
+            <!-- Row for morning camp session 1
             <tr>
                 <td>Learn 3D printing and CAD</td>
                 <td>May 10</td>
@@ -123,7 +146,7 @@
                 </td>
             </tr>
             <!-- End of row for morning camp session 1 -->
-            <!-- Row for morning camp session 2 -->
+            <!-- Row for morning camp session 2
             <tr>
                 <td>Make an Android App</td>
                 <td>May 11</td>
@@ -144,7 +167,7 @@
                 </td>
             </tr>
             <!-- End of row for morning camp session 2 -->
-            <!-- Row for morning camp session 3 -->
+            <!-- Row for morning camp session 3
             <tr>
                 <td>Papercraft</td>
                 <td>May 12</td>
@@ -164,7 +187,7 @@
                 </td>
             </tr>
             <!-- End of row for morning camp session 3 -->
-            <!-- Row for morning camp session 4 -->
+            <!-- Row for morning camp session 4
             <tr>
                 <td>Make and Fly a drone</td>
                 <td>May 13</td>
@@ -184,14 +207,14 @@
                     </font></p>
                 </td>
             </tr>
-            <!-- End of row for morning camp session 4 -->
+            <!-- End of row for morning camp session 4
           </table>
           <div><font size = 4> The price of the camp is Rs 4000 for all 4 days in either batch.<br>
           To pay for the full camp, click <a href="http://imojo.in/4hgrr0" target="_blank">here</a></font></div>
           </div>
         </font>
       </div>
-
+    -->
     <div>
       <p><font size = 8>Afternoon Camps</font></p>
       <div>
@@ -316,7 +339,212 @@
         <!-- End of row for afternoon camp session 4 -->
       </table>
       <br>
+      <!-- Start of Life through different Lens -->
+      <p><font size=8>Looking at Life from a different lens</font></p>
+      <p>Dates – 6th June to 10th June<br>Timing – 10 a.m. – 1 p.m.<br>Price – Rs. 1,000 per participant + Taxes<br>Minimum Participants – 8<br>Maximum Participants - 15<br>Age Group – 8 to 14 yrs</p>
+      <!-- Start of the table -->
+      <table id = "report2" style="width:953px">
+        <font size = 5>
+      <tr>
+        <th>Topics</th>
+        <th>Dates</th>
+        <th>Times</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
     </font>
+      <!-- Row for afternoon camp session 2 -->
+      <tr>
+          <td>Dance Movement Therapy</td>
+          <td>June 6</td>
+          <td>10 A.M. - 1 P.M.</td>
+          <td>Rs 1150</td>
+          <td><div class="arrow"></div></td>
+      </tr>
+      <tr>
+          <td colspan="5">
+              <img src="/images/summer_camp/lifethrulens/2.jpg"/>
+              <p><font size = 3>In Dance Movement Therapy, we use dance and movement in a very engaging way to enable children to become more confident and self-reliant, learn to be more creative, understand leading, following and working in a group, let go of stress and connect with themselves and the world around with ease, joy, and trust.<br> And have fun while doing all of this!<br>To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+              </font></p>
+          </td>
+      </tr>
+      <!-- End of row for afternoon camp session 2 -->
+      <!-- Row for afternoon camp session 3 -->
+      <tr>
+          <td>Integrated Arts and Music Playshop</td>
+          <td>June 7</td>
+          <td>10 A.M. - 1 P.M.</td>
+          <td>Rs 1150</td>
+          <td><div class="arrow"></div></td>
+      </tr>
+      <tr>
+          <td colspan="5">
+              <img src="/images/summer_camp/lifethrulens/3.jpg"/>
+              <p><font size = 3>The 'playshop' gives participants an experiential exposure to music and the arts as non-specialist, universal mediums of expression, catharsis, group cohesiveness & recreation.<br>It brings acceptance & comfort with letting creativity emerge freely in a space beyond mistakes, right & wrong.<br>It provides a necessary mind-heart-body balance through immersion in sensing, moving & a variety of other non-verbal activities such as rhythm, art & movement circle, storytelling, silence and sharing.<br>
+                To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+              </font></p>
+          </td>
+      </tr>
+      <!-- End of row for afternoon camp session 3 -->
+      <!-- Row for afternoon camp session 4 -->
+      <tr>
+          <td>Creative Writing and Play for Peace</td>
+          <td>June 8</td>
+          <td>10 A.M. - 1 P.M.</td>
+          <td>Rs 1150</td>
+          <td><div class="arrow"></div></td>
+      </tr>
+      <tr>
+          <td colspan="5">
+              <img src="/images/summer_camp/lifethrulens/4.jpg"/>
+              <p><font size = 3>It is not about grammar and spelling, as much as about allowing the colour inside the child to come out in rainbows.<br>A way to express their own true selves, feel their own unique voice, build observation skills, and of course let their imagination flow where they want it to.<br> A place where the kids can find themselves in wonder.<br>
+                Play Session involves different games that explore the concept of collaborative playing.<br>The games, besides being fun, create opportunities for children to explore leadership, teamwork and trust - in themselves and others, and also build memory.<br>
+                To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+              </font></p>
+          </td>
+      </tr>
+      <!-- End of row for afternoon camp session 4 -->
+      <!-- Row for afternoon camp session 4 -->
+      <tr>
+          <td>Story-telling and Theatre</td>
+          <td>June 9</td>
+          <td>10 A.M. - 1 P.M.</td>
+          <td>Rs 1150</td>
+          <td><div class="arrow"></div></td>
+      </tr>
+      <tr>
+          <td colspan="5">
+              <img src="/images/summer_camp/lifethrulens/5.jpg"/>
+              <p><font size = 3>We live and tell stories every day! Stories are what brings lessons to life, makes a difficult concept easier to understand and helps children remember sequences of events.<br>In this workshop children will explore different elements of story through inter-active games, drama and also create their own story through story-cards and learn how to tell a tale.<br>
+                To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+              </font></p>
+          </td>
+      </tr>
+      <!-- End of row for afternoon camp session 4 -->
+      <!-- Row for afternoon camp session 3 -->
+      <tr>
+          <td>Integrated Arts and Music Playshop with parents</td>
+          <td>June 10</td>
+          <td>10 A.M. - 1 P.M.</td>
+          <td>Rs 1150</td>
+          <td><div class="arrow"></div></td>
+      </tr>
+      <tr>
+          <td colspan="5">
+              <img src="/images/summer_camp/lifethrulens/3.jpg"/>
+              <p><font size = 3>This workshop focuses on the  different forms of art - Music, storytelling, drawing - integrated through a process.<br> It will be an open session for the facilitators and children to co-create based on what children would want to experience. And if Parents come, they will also be involved in the same process.<br>
+                To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+              </font></p>
+          </td>
+      </tr>
+      <!-- End of row for afternoon camp session 3 -->
+    </table>
+      <!-- End of table -->
+      <br>
+    </font>
+      </div>
+      <!--
+      <!-- Arduino deep dive table
+      <div>
+        <table id = "report2" style="width:953px">
+          <font size = 5>
+        <tr>
+          <th>Topics</th>
+          <th>Dates</th>
+          <th>Times</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </font>
+        <!-- Row for afternoon camp session 2
+        <tr>
+            <td>Dance Movement Therapy</td>
+            <td>June 6</td>
+            <td>10 A.M. - 1 P.M.</td>
+            <td>Rs 1150</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <img src="/images/summer_camp/lifethrulens/2.jpg"/>
+                <p><font size = 3>In Dance Movement Therapy, we use dance and movement in a very engaging way to enable children to become more confident and self-reliant, learn to be more creative, understand leading, following and working in a group, let go of stress and connect with themselves and the world around with ease, joy, and trust.<br> And have fun while doing all of this!<br>To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+                </font></p>
+            </td>
+        </tr>
+        <!-- End of row for afternoon camp session 2 -->
+        <!-- Row for afternoon camp session 3
+        <tr>
+            <td>Integrated Arts and Music Playshop</td>
+            <td>June 7</td>
+            <td>10 A.M. - 1 P.M.</td>
+            <td>Rs 1150</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <img src="/images/summer_camp/lifethrulens/3.jpg"/>
+                <p><font size = 3>The 'playshop' gives participants an experiential exposure to music and the arts as non-specialist, universal mediums of expression, catharsis, group cohesiveness & recreation.<br>It brings acceptance & comfort with letting creativity emerge freely in a space beyond mistakes, right & wrong.<br>It provides a necessary mind-heart-body balance through immersion in sensing, moving & a variety of other non-verbal activities such as rhythm, art & movement circle, storytelling, silence and sharing.<br>
+                  To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+                </font></p>
+            </td>
+        </tr>
+        <!-- End of row for afternoon camp session 3 -->
+        <!-- Row for afternoon camp session 4
+        <tr>
+            <td>Creative Writing and Play for Peace</td>
+            <td>June 8</td>
+            <td>10 A.M. - 1 P.M.</td>
+            <td>Rs 1150</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <img src="/images/summer_camp/lifethrulens/4.jpg"/>
+                <p><font size = 3>It is not about grammar and spelling, as much as about allowing the colour inside the child to come out in rainbows.<br>A way to express their own true selves, feel their own unique voice, build observation skills, and of course let their imagination flow where they want it to.<br> A place where the kids can find themselves in wonder.<br>
+                  Play Session involving different games that explore the concept of collaborative playing.<br>The games, besides being fun, create opportunities for children to explore leadership, teamwork and trust - in themselves and others, and also build memory.<br>
+                  To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+                </font></p>
+            </td>
+        </tr>
+        <!-- End of row for afternoon camp session 4 -->
+        <!-- Row for afternoon camp session 4
+        <tr>
+            <td>Story-telling and Theatre</td>
+            <td>June 9</td>
+            <td>10 A.M. - 1 P.M.</td>
+            <td>Rs 1150</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <img src="/images/summer_camp/lifethrulens/5.jpg"/>
+                <p><font size = 3>We live and tell stories every day! Stories are what brings lessons to life, makes a difficult concept easier to understand and helps children remember sequences of events.<br>In this workshop children will explore different elements of story through inter-active games, drama and also create their own story through story-cards and learn how to tell a tale.<br>
+                  To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+                </font></p>
+            </td>
+        </tr>
+        <!-- End of row for afternoon camp session 4 -->
+        <!-- Row for afternoon camp session 3
+        <tr>
+            <td>Integrated Arts and Music Playshop</td>
+            <td>June 10</td>
+            <td>10 A.M. - 1 P.M.</td>
+            <td>Rs 1150</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <img src="/images/summer_camp/lifethrulens/3.jpg"/>
+                <p><font size = 3>The 'playshop' gives participants an experiential exposure to music and the arts as non-specialist, universal mediums of expression, catharsis, group cohesiveness & recreation.<br>It brings acceptance & comfort with letting creativity emerge freely in a space beyond mistakes, right & wrong.<br>It provides a necessary mind-heart-body balance through immersion in sensing, moving & a variety of other non-verbal activities such as rhythm, art & movement circle, storytelling, silence and sharing.<br>
+                  To pay for the session, click <a href="http://imojo.in/74qdj9" target="_blank">here</a>.
+                </font></p>
+            </td>
+        </tr>
+        <!-- End of row for afternoon camp session 3 -->
+      </table>
+        <!-- End of table -->
+        <br>
+      </font>
       </div>
       <div><font size = 4> Contact us at +91 22 22617244 for more details and registration.</font></div>
       <br>
